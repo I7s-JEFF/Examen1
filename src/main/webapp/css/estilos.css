@@ -1,0 +1,334 @@
+/* ESTILOS EXISTENTES (se mantienen todos) */
+@charset "UTF-8";
+
+body {
+    background-color: #2C2C2C;
+    color: #F7374F;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #F7374F;
+    text-align: center;
+}
+
+#favorito {
+    border: 6px solid #522546;
+    color: #F7374F;
+}
+
+.destacado {
+    font-weight: bold;
+    color: #F7374F;
+    text-align: right;
+}
+
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+header, nav, section, article, footer {
+    border: 1px solid #88304E;
+    display: block;
+}
+
+header {
+    background-color: #522546;
+    padding: 20px 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #88304E;
+    padding: 10px 5px;
+}
+
+nav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #F7374F;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+nav a.active {
+    background-color: #F7374F;
+    border: 1px solid #ffffff;
+    color: white;
+}
+
+.agrupar {
+    border: 1px;
+    margin: auto;
+    width: 960px;
+}
+
+section {
+    margin: 20px auto;
+    width: 80%;
+    background: #522546;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    clear: both;
+}
+
+footer {
+    overflow: hidden;
+    background-color: #88304E;
+    padding: 10px 10px;
+    text-align: center;
+    clear: both;
+    color: #ffffff;
+}
+
+footer li {
+    list-style: none;
+    font: bold 14px Verdana, sans-serif;
+    padding: 10px;
+    display: inline-block;
+}
+
+aside {
+    margin: 20px;
+    padding: 39px;
+    width: 200px;
+    border: 1px;
+    float: right;
+    background: #522546;
+    color: #ffffff;
+}
+
+.tabla-container {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #522546;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.table {
+    margin: 0 auto;
+    width: 100%;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.table th {
+    background-color: #F7374F !important;
+    color: #ffffff;
+    text-align: center;
+}
+
+.table td {
+    color: #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #6e294f !important;
+}
+
+/* Botones */
+.btn-primary,
+.btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid #F7374F;
+    color: #F7374F;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    background-color: #F7374F;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #F7374F;
+    border-color: #F7374F;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #ff5e72;
+    border-color: #ff5e72;
+    color: white;
+}
+
+.btn-outline-danger {
+    border-color: #ff5e72;
+    color: #ff5e72;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff5e72;
+    color: white;
+}
+
+/* Card */
+.card {
+    background-color: #3a1f2e;
+    color: #fff;
+    border: none;
+}
+
+.card-header {
+    background-color: #6e294f;
+    color: #ffffff;
+    border-bottom: 1px solid #F7374F;
+}
+
+.card-body {
+    background-color: #522546;
+}
+
+/* Tabla */
+.table-light th {
+    background-color: #F7374F !important;
+    color: white !important;
+}
+
+.table-active {
+    background-color: #6e294f !important;
+}
+
+/* Formulario input (cantidad) */
+input[type="number"] {
+    background-color: #2C2C2C;
+    color: #ffffff;
+    border: 1px solid #F7374F;
+}
+
+/* Iconos (si usas Bootstrap Icons) */
+.bi {
+    color: #F7374F;
+}
+
+/* Links dentro de tarjetas o secciones */
+a.btn {
+    font-weight: bold;
+}
+
+/* ========================================== */
+/* NUEVOS ESTILOS PARA EL REPORTE DE BITÁCORA */
+/* ========================================== */
+
+/* Contenedor principal del reporte */
+section .titulo-reporte {
+    color: #F7374F;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #F7374F;
+    padding-bottom: 10px;
+}
+
+/* Tabla de bitácora */
+.reporte-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.reporte-table thead tr {
+    background-color: #F7374F;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.reporte-table th,
+.reporte-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #88304E;
+}
+
+.reporte-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.reporte-table tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.reporte-table tbody tr:last-of-type {
+    border-bottom: 2px solid #F7374F;
+}
+
+.reporte-table tbody tr:hover {
+    background-color: #6e294f;
+    transform: scale(1.005);
+}
+
+/* Estilos para tipos de registros */
+.registro-exito {
+    color: #4CAF50;
+}
+
+.registro-error {
+    color: #ff5e72;
+    font-weight: bold;
+}
+
+.registro-advertencia {
+    color: #FFC107;
+}
+
+/* Responsive para la tabla */
+@media (max-width: 768px) {
+    .reporte-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .reporte-table th,
+    .reporte-table td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Efectos de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mejoras para el footer */
+footer ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer li a img {
+    transition: transform 0.3s ease;
+}
+
+footer li a img:hover {
+    transform: scale(1.2);
+}
